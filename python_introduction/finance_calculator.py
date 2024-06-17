@@ -1,5 +1,5 @@
 # declarations
-annual_int_rate = 5%;
+annual_int_rate = 0.05;
 
 # Input for users
 monthly_income = int(input("Enter your monthly income: ")); 
