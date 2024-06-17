@@ -1,9 +1,9 @@
 # declarations
 annual_int_rate = 5%;
 
-# input for users
+# Input for users
 monthly_income = int(input("Enter your monthly income: ")); 
-monthly_expenses = int(input("ENter your total monthly expenses: "));
+monthly_expenses = int(input("Enter your total monthly expenses: "));
 
 # Monthly Savings
 monthly_savings = monthly_income - monthly_expenses;
@@ -12,4 +12,4 @@ Annual_savings = monthly_savings * 12 + (monthly_savings * 12 * annual_int_rate)
 
 # Output
 print(f"Your monthly savings are ${montlhy_savings}");
-print(f"Prohject savings after one year, with interest, is: %{Annual_savings}");
+print(f"Prohject savings after one year, with interest, is: ${Annual_savings}");
