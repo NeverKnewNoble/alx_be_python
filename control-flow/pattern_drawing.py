@@ -1,9 +1,14 @@
-# multiplication_table.py
+# pattern_drawing.py
 
-# Prompt the user to enter a number
-number = int(input("Enter a number to see its multiplication table: "))
+# Prompt the user for the size of the pattern
+size = int(input("Enter the size of the pattern: "))
 
-# Use a for loop to generate and print the multiplication table from 1 to 10
-for i in range(1, 11):
-    product = number * i
-    print(f"{number} * {i} = {product}")
+# Use a while loop to iterate through each row
+row = 0
+while row < size:
+    # Use a for loop to print asterisks side by side without advancing to a new line
+    for col in range(size):
+        print("*", end="")
+    # Print a newline character to move to the next row
+    print()
+    row += 1
