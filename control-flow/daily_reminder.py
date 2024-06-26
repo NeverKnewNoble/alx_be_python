@@ -30,6 +30,8 @@ def main():
                 reminder += " that should be completed when you have the time."
             else:
                 reminder += " that can be done at your leisure."
+        case _:
+            reminder = "Invalid priority level entered."
 
     # Print the reminder
     print(reminder)
@@ -37,4 +39,3 @@ def main():
 # Run the main function
 if __name__ == "__main__":
     main()
-
