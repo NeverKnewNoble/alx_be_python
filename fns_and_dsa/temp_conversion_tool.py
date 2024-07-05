@@ -6,12 +6,14 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 FAHRENHEIT_FREEZING_POINT = 32
 
 def convert_to_celsius(fahrenheit):
+    global FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9;
     """
     Convert Fahrenheit to Celsius using the global conversion factor.
     """
     return (fahrenheit - FAHRENHEIT_FREEZING_POINT) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
+    global CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5;
     """
     Convert Celsius to Fahrenheit using the global conversion factor.
     """
